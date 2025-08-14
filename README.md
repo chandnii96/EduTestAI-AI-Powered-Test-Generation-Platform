@@ -1,14 +1,63 @@
-# React + Vite
+# EduTestAI — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The **frontend** of **EduTestAI**, a cutting-edge AI-powered test generation platform built with **React** and **Vite**. This interface enables users to create, attempt, and track quizzes generated via AI seamlessly.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Beautiful, responsive UI** designed with Tailwind CSS.
+* **JWT-based authentication**, including login and signup flows.
+* **AI-powered test creation**: Users generate tests by choosing subject, title, and difficulty.
+* **Real-time quiz attempts** with progress tracking and scoring.
+* **Test history sidebar** to review previous attempts.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Quiz-App-Frontend
-# EduTestAI-AI-Powered-Test-Generation-Platform
+| Component        | Technology                |
+| ---------------- | ------------------------- |
+| Build Tool       | Vite                      |
+| UI Framework     | React                     |
+| Styling          | Tailwind CSS              |
+| Routing          | React Router DOM          |
+| State Management | React Hooks + Context API |
+| API Requests     | Axios                     |
+| Icons            | Lucide React              |
+
+
+## Setup & Development
+
+1. **Clone this repository**
+
+   ```bash
+   git clone https://github.com/chandnii96/EduTestAI-AI-Powered-Test-Generation-Platform.git
+   cd EduTestAI-AI-Powered-Test-Generation-Platform
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**
+   Create a `.env` file with:
+
+   ```env
+   VITE_API_URL=http://localhost:5000
+   ```
+
+4. **Run the app**
+
+   ```bash
+   npm run dev
+   ```
+
+   Launches the app at: `http://localhost:5173`
+
+
+## Features & Flow
+
+* **Signup / Login**: Secure onboarding with JWT.
+* **Test Creation**: Fill out form fields to generate AI-powered quizzes.
+* **Take Quiz**: Streamlined experience with question-by-question interaction.
+* **Quiz Results**: Displays score and performance.
+* **Test History**: View past attempts via sliding sidebar.
